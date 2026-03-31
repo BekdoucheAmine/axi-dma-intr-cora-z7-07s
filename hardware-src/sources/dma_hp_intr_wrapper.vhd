@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Wed Mar 18 02:51:29 2026
+--Date        : Tue Mar 31 20:22:58 2026
 --Host        : Amine_s-Laptop running 64-bit major release  (build 9200)
 --Command     : generate_target dma_hp_intr_wrapper.bd
 --Design      : dma_hp_intr_wrapper
@@ -40,12 +40,6 @@ end dma_hp_intr_wrapper;
 architecture STRUCTURE of dma_hp_intr_wrapper is
   component dma_hp_intr is
   port (
-    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    FIXED_IO_ddr_vrn : inout STD_LOGIC;
-    FIXED_IO_ddr_vrp : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC;
-    FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -60,7 +54,13 @@ architecture STRUCTURE of dma_hp_intr_wrapper is
     DDR_dm : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 )
+    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    FIXED_IO_ddr_vrn : inout STD_LOGIC;
+    FIXED_IO_ddr_vrp : inout STD_LOGIC;
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    FIXED_IO_ps_clk : inout STD_LOGIC;
+    FIXED_IO_ps_porb : inout STD_LOGIC
   );
   end component dma_hp_intr;
 begin
