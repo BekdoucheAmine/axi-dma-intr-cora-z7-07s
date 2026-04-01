@@ -13,10 +13,10 @@ This guide builds upon the Simple Polling DMA setup by integrating interrupts. T
         - DMA Interrupt Architecture
         - Debug Setup
     - Software
-        - Interrupt DMA
+        - Interrupt Implementation
 - Results
-    - DMA Interrupt Implementation
-    - Cache Coherency and Invalidation
+    - Logic Inspection
+    - Serial Output
 
 ## Introduction
 
