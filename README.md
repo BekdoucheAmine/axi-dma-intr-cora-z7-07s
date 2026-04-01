@@ -2,7 +2,7 @@
 
 ## Summary
 
-This guide builds upon the Simple Polling DMA setup by integrating interrupts. This transitions the system from a "wait-and-watch" approach to an event-driven one, freeing the CPU to execute other tasks while the hardware handles data movement.
+This guide builds upon the [Simple Polling DMA](https://github.com/BekdoucheAmine/axi-dma-sp-cora-z7-07s) setup by integrating interrupts. This transitions the system from a "wait-and-watch" approach to an event-driven one, freeing the CPU to execute other tasks while the hardware handles data movement.
 
 ## Table of Content
 
@@ -32,7 +32,7 @@ In high-performance embedded systems, data movement efficiency is critical. On t
 
 ### Hardware
 
-If you haven't completed the basic setup, refer to the [Simple Polling Arch]() guide first.
+If you haven't completed the basic setup, refer to the [Simple Polling Arch](https://github.com/BekdoucheAmine/axi-dma-sp-cora-z7-07s) guide first.
 
 #### DMA Interrupt Architecture
 
